@@ -29,7 +29,7 @@ MIN_STARS = 500
 MAX_INACTIVE_DAYS = 730
 
 REQUIRED = {"name", "repo", "category", "description"}
-OPTIONAL = {"hardware", "acclaim", "note"}
+OPTIONAL = {"hardware", "license", "acclaim", "note"}
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
 
 
@@ -142,10 +142,11 @@ def audit(data):
             if info["stargazers_count"] < MIN_STARS and not p.get("acclaim"):
                 problems.append(f"{info['stargazers_count']} stars < {MIN_STARS} and no `acclaim` link")
             spdx = (info.get("license") or {}).get("spdx_id")
-            if not spdx or spdx == "NOASSERTION":
-                problems.append("no license detected by GitHub")
+            if (not spdx or spdx == "NOASSERTION") and not p.get("license"):
+                problems.append("no license detected by GitHub and no verified `license`")
         stars = info.get("stargazers_count", "?")
-        lic = (info.get("license") or {}).get("spdx_id", "?")
+        detected = (info.get("license") or {}).get("spdx_id")
+        lic = detected if detected and detected != "NOASSERTION" else p.get("license", "?")
         status = "; ".join(problems) or "ok"
         rows.append(f"| {p['name']} | {stars} | {lic} | {status} |")
         if problems:

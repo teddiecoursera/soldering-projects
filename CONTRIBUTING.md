@@ -12,7 +12,9 @@ python scripts/curate.py render
 
 A project is accepted only if **all** of these hold:
 
-1. **Open source.** It has a license that GitHub detects (preferably OSI-approved). "Source available" or no license is rejected.
+1. **Open source.** It has an open-source license (preferably OSI-approved). If GitHub can't detect it
+   (dual licenses, unusual file names), a moderator reads the license file and records it in `license:`.
+   "Source available" or no license at the repository root is rejected.
 2. **ESP32 is a primary target.** The project is built for ESP32 / S2 / S3 / C3 / C6 / H2 / P4 modules, not just "might compile on it".
 3. **Acclaimed.** It has **500+ GitHub stars**, *or* an `acclaim:` link to notable independent coverage (e.g. a Hackaday feature, a conference talk, a major maker publication).
 4. **Alive.** It isn't archived and has had a push within the last **24 months**.
@@ -37,6 +39,7 @@ moved repo), or removes it in a PR that explains why.
   category: lighting            # a key from `categories:`
   description: Addressable LED strip controller with 100+ effects   # <= 120 chars, no trailing period
   hardware: true                # optional: schematics/PCB are published
+  license: MIT AND GPL-3.0-only # optional: verified SPDX, only if GitHub can't detect it
   acclaim: https://hackaday.com/...   # optional: needed if under 500 stars
   note: Moderator note          # optional: shown in the README
 ```

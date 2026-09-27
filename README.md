@@ -32,16 +32,13 @@ weekly against those rules, so dead or relicensed projects get flagged. See
 
 | Project | Description | Stars | Last commit |
 |---|---|---|---|
-| [AirGradient](https://github.com/airgradienthq/arduino) | Firmware for open-hardware indoor/outdoor air quality monitors (PM2.5, CO2, TVOC) 🔧 | ![stars](https://img.shields.io/github/stars/airgradienthq/arduino?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/airgradienthq/arduino?style=flat-square&label=) |
 | [EMS-ESP32](https://github.com/emsesp/EMS-ESP32) | Reads and controls Bosch/Buderus/Nefit boilers and heat pumps over the EMS bus | ![stars](https://img.shields.io/github/stars/emsesp/EMS-ESP32?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/emsesp/EMS-ESP32?style=flat-square&label=) |
 | [OpenDTU](https://github.com/tbnobody/OpenDTU) | Local monitoring and power limiting for Hoymiles solar micro-inverters | ![stars](https://img.shields.io/github/stars/tbnobody/OpenDTU?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/tbnobody/OpenDTU?style=flat-square&label=) |
-| [OpenEVSE WiFi](https://github.com/OpenEVSE/ESP32_WiFi_V4.x) | WiFi gateway firmware for OpenEVSE electric-vehicle chargers | ![stars](https://img.shields.io/github/stars/OpenEVSE/ESP32_WiFi_V4.x?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/OpenEVSE/ESP32_WiFi_V4.x?style=flat-square&label=) |
 
 ### Radio, mesh & networking
 
 | Project | Description | Stars | Last commit |
 |---|---|---|---|
-| [ESP32 NAT Router](https://github.com/martin-ger/esp32_nat_router) | Turns an ESP32 into a WiFi NAT router / range extender | ![stars](https://img.shields.io/github/stars/martin-ger/esp32_nat_router?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/martin-ger/esp32_nat_router?style=flat-square&label=) |
 | [ESP32-Paxcounter](https://github.com/cyberman54/ESP32-Paxcounter) | Counts nearby WiFi and BLE devices to estimate crowd density, reports via LoRaWAN | ![stars](https://img.shields.io/github/stars/cyberman54/ESP32-Paxcounter?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/cyberman54/ESP32-Paxcounter?style=flat-square&label=) |
 | [Meshtastic](https://github.com/meshtastic/firmware) | Off-grid encrypted LoRa mesh messaging for ESP32 and other boards | ![stars](https://img.shields.io/github/stars/meshtastic/firmware?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/meshtastic/firmware?style=flat-square&label=) |
 
@@ -49,7 +46,7 @@ weekly against those rules, so dead or relicensed projects get flagged. See
 
 | Project | Description | Stars | Last commit |
 |---|---|---|---|
-| [Bruce](https://github.com/pr3y/Bruce) | Multi-tool firmware for red-team research on M5Stack, Cardputer and similar boards ⚠️ _Only use on networks and devices you own or are authorized to test_ | ![stars](https://img.shields.io/github/stars/pr3y/Bruce?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/pr3y/Bruce?style=flat-square&label=) |
+| [Bruce](https://github.com/BruceDevices/firmware) | Multi-tool firmware for red-team research on M5Stack, Cardputer and similar boards ⚠️ _Only use on networks and devices you own or are authorized to test_ | ![stars](https://img.shields.io/github/stars/BruceDevices/firmware?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/BruceDevices/firmware?style=flat-square&label=) |
 | [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder) | WiFi and Bluetooth offensive/defensive research suite with touchscreen UI ⚠️ _Only use on networks and devices you own or are authorized to test_ | ![stars](https://img.shields.io/github/stars/justcallmekoko/ESP32Marauder?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/justcallmekoko/ESP32Marauder?style=flat-square&label=) |
 
 ### Audio & voice
@@ -57,8 +54,6 @@ weekly against those rules, so dead or relicensed projects get flagged. See
 | Project | Description | Stars | Last commit |
 |---|---|---|---|
 | [ESP-BOX](https://github.com/espressif/esp-box) | Espressif's open AIoT voice dev kit with speech recognition demos 🔧 | ![stars](https://img.shields.io/github/stars/espressif/esp-box?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/espressif/esp-box?style=flat-square&label=) |
-| [snapclient](https://github.com/CarlosDerSeher/snapclient) | Snapcast client for synchronized multiroom audio on ESP32 | ![stars](https://img.shields.io/github/stars/CarlosDerSeher/snapclient?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/CarlosDerSeher/snapclient?style=flat-square&label=) |
-| [squeezelite-esp32](https://github.com/sle118/squeezelite-esp32) | Logitech Media Server / AirPlay / Bluetooth audio player for ESP32 | ![stars](https://img.shields.io/github/stars/sle118/squeezelite-esp32?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/sle118/squeezelite-esp32?style=flat-square&label=) |
 | [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) | LLM-powered voice assistant firmware supporting dozens of ESP32-S3 boards | ![stars](https://img.shields.io/github/stars/78/xiaozhi-esp32?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/78/xiaozhi-esp32?style=flat-square&label=) |
 | [yoRadio](https://github.com/e2002/yoradio) | Web radio player with display, rotary encoder and IR remote support | ![stars](https://img.shields.io/github/stars/e2002/yoradio?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/e2002/yoradio?style=flat-square&label=) |
 
@@ -68,7 +63,6 @@ weekly against those rules, so dead or relicensed projects get flagged. See
 |---|---|---|---|
 | [EPDiy](https://github.com/vroland/epdiy) | Driver board and library for parallel e-paper displays (Kindle panels etc.) 🔧 | ![stars](https://img.shields.io/github/stars/vroland/epdiy?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/vroland/epdiy?style=flat-square&label=) |
 | [NerdMiner v2](https://github.com/BitMaker-hub/NerdMiner_v2) | Toy "lottery" Bitcoin solo miner with a stats display on cheap ESP32 boards | ![stars](https://img.shields.io/github/stars/BitMaker-hub/NerdMiner_v2?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/BitMaker-hub/NerdMiner_v2?style=flat-square&label=) |
-| [SmartKnob](https://github.com/scottbez1/smartknob) | Haptic input knob with software-defined detents and a round display (ESP32-S3) 🔧 | ![stars](https://img.shields.io/github/stars/scottbez1/smartknob?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/scottbez1/smartknob?style=flat-square&label=) |
 | [Split-flap display](https://github.com/scottbez1/splitflap) | DIY split-flap display with ESP32 controller, laser-cut or 3D-printed 🔧 | ![stars](https://img.shields.io/github/stars/scottbez1/splitflap?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/scottbez1/splitflap?style=flat-square&label=) |
 | [Watchy](https://github.com/sqfmi/Watchy) | Open-source ESP32 e-paper smartwatch 🔧 | ![stars](https://img.shields.io/github/stars/sqfmi/Watchy?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/sqfmi/Watchy?style=flat-square&label=) |
 
@@ -85,12 +79,6 @@ weekly against those rules, so dead or relicensed projects get flagged. See
 |---|---|---|---|
 | [ESP-Drone](https://github.com/espressif/esp-drone) | Mini quadcopter built around ESP32-S2/S3, controlled from a phone 🔧 | ![stars](https://img.shields.io/github/stars/espressif/esp-drone?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/espressif/esp-drone?style=flat-square&label=) |
 | [FluidNC](https://github.com/bdring/FluidNC) | CNC motion controller firmware (successor to Grbl_ESP32) for mills, lasers and plotters | ![stars](https://img.shields.io/github/stars/bdring/FluidNC?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/bdring/FluidNC?style=flat-square&label=) |
-
-### Crypto hardware
-
-| Project | Description | Stars | Last commit |
-|---|---|---|---|
-| [Blockstream Jade](https://github.com/Blockstream/Jade) | Open-source Bitcoin hardware wallet firmware, also buildable on generic ESP32 boards | ![stars](https://img.shields.io/github/stars/Blockstream/Jade?style=flat-square&label=) | ![last commit](https://img.shields.io/github/last-commit/Blockstream/Jade?style=flat-square&label=) |
 
 ### Frameworks & libraries
 

@@ -8,6 +8,8 @@
 #   category     one of the keys under `categories`
 #   description  one line, no trailing period, <= 120 chars
 #   hardware     true if schematics/PCB files are published (buildable open hardware)
+#   license      SPDX expression verified by a moderator; only needed when GitHub
+#                can't detect the license (shows NOASSERTION or nothing)
 #   acclaim      optional link to notable coverage (required if under the star threshold)
 #   note         optional moderator note shown in the README
 
@@ -21,13 +23,13 @@ categories:
   displays-ui: Displays, clocks & gadgets
   gaming: Gaming & input
   robotics-cnc: Robotics & CNC
-  crypto: Crypto hardware
   foundations: Frameworks & libraries
 
 projects:
   # --- Home automation ---
   - name: ESPHome
     repo: esphome/esphome
+    license: MIT AND GPL-3.0-only
     category: home-automation
     description: YAML-configured firmware for ESP32 devices with native Home Assistant integration
   - name: Tasmota
@@ -36,6 +38,7 @@ projects:
     description: Alternative firmware for ESP-based smart devices with web UI, MQTT, rules and OTA updates
   - name: ESPEasy
     repo: letscontrolit/ESPEasy
+    license: GPL-3.0-or-later
     category: home-automation
     description: Plugin-based sensor and actuator firmware configured entirely from a web interface
   - name: OpenMQTTGateway
@@ -70,38 +73,27 @@ projects:
     repo: emsesp/EMS-ESP32
     category: energy
     description: Reads and controls Bosch/Buderus/Nefit boilers and heat pumps over the EMS bus
-  - name: OpenEVSE WiFi
-    repo: OpenEVSE/ESP32_WiFi_V4.x
-    category: energy
-    description: WiFi gateway firmware for OpenEVSE electric-vehicle chargers
-  - name: AirGradient
-    repo: airgradienthq/arduino
-    category: energy
-    description: Firmware for open-hardware indoor/outdoor air quality monitors (PM2.5, CO2, TVOC)
-    hardware: true
 
   # --- Radio, mesh & networking ---
   - name: Meshtastic
     repo: meshtastic/firmware
     category: radio
     description: Off-grid encrypted LoRa mesh messaging for ESP32 and other boards
-  - name: ESP32 NAT Router
-    repo: martin-ger/esp32_nat_router
-    category: radio
-    description: Turns an ESP32 into a WiFi NAT router / range extender
   - name: ESP32-Paxcounter
     repo: cyberman54/ESP32-Paxcounter
+    license: Apache-2.0
     category: radio
     description: Counts nearby WiFi and BLE devices to estimate crowd density, reports via LoRaWAN
 
   # --- Security research ---
   - name: ESP32 Marauder
     repo: justcallmekoko/ESP32Marauder
+    license: MIT
     category: security
     description: WiFi and Bluetooth offensive/defensive research suite with touchscreen UI
     note: Only use on networks and devices you own or are authorized to test
   - name: Bruce
-    repo: pr3y/Bruce
+    repo: BruceDevices/firmware
     category: security
     description: Multi-tool firmware for red-team research on M5Stack, Cardputer and similar boards
     note: Only use on networks and devices you own or are authorized to test
@@ -111,18 +103,10 @@ projects:
     repo: 78/xiaozhi-esp32
     category: audio-voice
     description: LLM-powered voice assistant firmware supporting dozens of ESP32-S3 boards
-  - name: squeezelite-esp32
-    repo: sle118/squeezelite-esp32
-    category: audio-voice
-    description: Logitech Media Server / AirPlay / Bluetooth audio player for ESP32
   - name: yoRadio
     repo: e2002/yoradio
     category: audio-voice
     description: Web radio player with display, rotary encoder and IR remote support
-  - name: snapclient
-    repo: CarlosDerSeher/snapclient
-    category: audio-voice
-    description: Snapcast client for synchronized multiroom audio on ESP32
   - name: ESP-BOX
     repo: espressif/esp-box
     category: audio-voice
@@ -130,13 +114,9 @@ projects:
     hardware: true
 
   # --- Displays, clocks & gadgets ---
-  - name: SmartKnob
-    repo: scottbez1/smartknob
-    category: displays-ui
-    description: Haptic input knob with software-defined detents and a round display (ESP32-S3)
-    hardware: true
   - name: Split-flap display
     repo: scottbez1/splitflap
+    license: Apache-2.0
     category: displays-ui
     description: DIY split-flap display with ESP32 controller, laser-cut or 3D-printed
     hardware: true
@@ -152,6 +132,7 @@ projects:
     hardware: true
   - name: NerdMiner v2
     repo: BitMaker-hub/NerdMiner_v2
+    license: MIT
     category: displays-ui
     description: Toy "lottery" Bitcoin solo miner with a stats display on cheap ESP32 boards
 
@@ -162,12 +143,14 @@ projects:
     description: Retro console emulator launcher (NES, GB, SMS, PCE, ...) for ESP32 handhelds
   - name: Bluepad32
     repo: ricardoquesada/bluepad32
+    license: Apache-2.0
     category: gaming
     description: Bluetooth gamepad host for ESP32 supporting Xbox, PlayStation, Switch controllers
 
   # --- Robotics & CNC ---
   - name: FluidNC
     repo: bdring/FluidNC
+    license: GPL-3.0-or-later
     category: robotics-cnc
     description: CNC motion controller firmware (successor to Grbl_ESP32) for mills, lasers and plotters
   - name: ESP-Drone
@@ -176,11 +159,6 @@ projects:
     description: Mini quadcopter built around ESP32-S2/S3, controlled from a phone
     hardware: true
 
-  # --- Crypto hardware ---
-  - name: Blockstream Jade
-    repo: Blockstream/Jade
-    category: crypto
-    description: Open-source Bitcoin hardware wallet firmware, also buildable on generic ESP32 boards
 
   # --- Frameworks & libraries ---
   - name: ESP-IDF
@@ -197,10 +175,12 @@ projects:
     description: Camera driver for OV2640/OV3660/OV5640 and friends (ESP32-CAM)
   - name: TFT_eSPI
     repo: Bodmer/TFT_eSPI
+    license: MIT AND BSD-2-Clause
     category: foundations
     description: Fast graphics library for SPI TFT displays
   - name: LovyanGFX
     repo: lovyan03/LovyanGFX
+    license: MIT AND BSD-2-Clause
     category: foundations
     description: High-performance graphics library for SPI/I2C/parallel displays
   - name: NimBLE-Arduino

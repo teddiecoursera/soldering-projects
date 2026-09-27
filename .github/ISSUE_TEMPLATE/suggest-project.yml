@@ -26,7 +26,7 @@ body:
     attributes:
       label: Criteria (see CONTRIBUTING.md)
       options:
-        - label: Open-source license detected by GitHub
+        - label: Open-source license at the repository root
           required: true
         - label: ESP32 family is a primary target
           required: true
