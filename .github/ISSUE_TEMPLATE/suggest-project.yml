@@ -1,0 +1,36 @@
+name: Suggest a project
+description: Propose an ESP32 project for the list
+title: "Suggest: "
+labels: [suggestion]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository
+      placeholder: owner/name
+    validations:
+      required: true
+  - type: input
+    id: description
+    attributes:
+      label: One-line description
+    validations:
+      required: true
+  - type: input
+    id: acclaim
+    attributes:
+      label: Notable coverage (required if under 500 stars)
+      placeholder: https://hackaday.com/...
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Criteria (see CONTRIBUTING.md)
+      options:
+        - label: Open-source license at the repository root
+          required: true
+        - label: ESP32 family is a primary target
+          required: true
+        - label: Not archived, pushed within the last 24 months
+          required: true
+        - label: README documents hardware and how to build/flash
+          required: true
