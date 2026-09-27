@@ -1,0 +1,229 @@
+# Source of truth for the list. README.md is generated from this file:
+#   python scripts/curate.py render
+# See CONTRIBUTING.md for inclusion criteria before adding an entry.
+#
+# Fields:
+#   name         display name
+#   repo         GitHub owner/name
+#   category     one of the keys under `categories`
+#   description  one line, no trailing period, <= 120 chars
+#   hardware     true if schematics/PCB files are published (buildable open hardware)
+#   acclaim      optional link to notable coverage (required if under the star threshold)
+#   note         optional moderator note shown in the README
+
+categories:
+  home-automation: Home automation & smart home
+  lighting: LED & lighting
+  energy: Energy, climate & sensing
+  radio: Radio, mesh & networking
+  security: Security research tools
+  audio-voice: Audio & voice
+  displays-ui: Displays, clocks & gadgets
+  gaming: Gaming & input
+  robotics-cnc: Robotics & CNC
+  crypto: Crypto hardware
+  foundations: Frameworks & libraries
+
+projects:
+  # --- Home automation ---
+  - name: ESPHome
+    repo: esphome/esphome
+    category: home-automation
+    description: YAML-configured firmware for ESP32 devices with native Home Assistant integration
+  - name: Tasmota
+    repo: arendst/Tasmota
+    category: home-automation
+    description: Alternative firmware for ESP-based smart devices with web UI, MQTT, rules and OTA updates
+  - name: ESPEasy
+    repo: letscontrolit/ESPEasy
+    category: home-automation
+    description: Plugin-based sensor and actuator firmware configured entirely from a web interface
+  - name: OpenMQTTGateway
+    repo: 1technophile/OpenMQTTGateway
+    category: home-automation
+    description: Bridges BLE, 433 MHz, IR and LoRa devices to MQTT
+  - name: openHASP
+    repo: HASwitchPlate/openHASP
+    category: home-automation
+    description: Turns ESP32 touchscreens into customizable Home Assistant control panels over MQTT
+  - name: ESPresense
+    repo: ESPresense/ESPresense
+    category: home-automation
+    description: Room-level presence detection from BLE advertisements using a node per room
+  - name: ratgdo (ESPHome)
+    repo: ratgdo/esphome-ratgdo
+    category: home-automation
+    description: Local control of Chamberlain/LiftMaster Security+ garage door openers
+
+  # --- Lighting ---
+  - name: WLED
+    repo: wled/WLED
+    category: lighting
+    description: Addressable LED strip controller with 100+ effects, web/app control and sound reactivity
+
+  # --- Energy, climate & sensing ---
+  - name: OpenDTU
+    repo: tbnobody/OpenDTU
+    category: energy
+    description: Local monitoring and power limiting for Hoymiles solar micro-inverters
+  - name: EMS-ESP32
+    repo: emsesp/EMS-ESP32
+    category: energy
+    description: Reads and controls Bosch/Buderus/Nefit boilers and heat pumps over the EMS bus
+  - name: OpenEVSE WiFi
+    repo: OpenEVSE/ESP32_WiFi_V4.x
+    category: energy
+    description: WiFi gateway firmware for OpenEVSE electric-vehicle chargers
+  - name: AirGradient
+    repo: airgradienthq/arduino
+    category: energy
+    description: Firmware for open-hardware indoor/outdoor air quality monitors (PM2.5, CO2, TVOC)
+    hardware: true
+
+  # --- Radio, mesh & networking ---
+  - name: Meshtastic
+    repo: meshtastic/firmware
+    category: radio
+    description: Off-grid encrypted LoRa mesh messaging for ESP32 and other boards
+  - name: ESP32 NAT Router
+    repo: martin-ger/esp32_nat_router
+    category: radio
+    description: Turns an ESP32 into a WiFi NAT router / range extender
+  - name: ESP32-Paxcounter
+    repo: cyberman54/ESP32-Paxcounter
+    category: radio
+    description: Counts nearby WiFi and BLE devices to estimate crowd density, reports via LoRaWAN
+
+  # --- Security research ---
+  - name: ESP32 Marauder
+    repo: justcallmekoko/ESP32Marauder
+    category: security
+    description: WiFi and Bluetooth offensive/defensive research suite with touchscreen UI
+    note: Only use on networks and devices you own or are authorized to test
+  - name: Bruce
+    repo: pr3y/Bruce
+    category: security
+    description: Multi-tool firmware for red-team research on M5Stack, Cardputer and similar boards
+    note: Only use on networks and devices you own or are authorized to test
+
+  # --- Audio & voice ---
+  - name: xiaozhi-esp32
+    repo: 78/xiaozhi-esp32
+    category: audio-voice
+    description: LLM-powered voice assistant firmware supporting dozens of ESP32-S3 boards
+  - name: squeezelite-esp32
+    repo: sle118/squeezelite-esp32
+    category: audio-voice
+    description: Logitech Media Server / AirPlay / Bluetooth audio player for ESP32
+  - name: yoRadio
+    repo: e2002/yoradio
+    category: audio-voice
+    description: Web radio player with display, rotary encoder and IR remote support
+  - name: snapclient
+    repo: CarlosDerSeher/snapclient
+    category: audio-voice
+    description: Snapcast client for synchronized multiroom audio on ESP32
+  - name: ESP-BOX
+    repo: espressif/esp-box
+    category: audio-voice
+    description: Espressif's open AIoT voice dev kit with speech recognition demos
+    hardware: true
+
+  # --- Displays, clocks & gadgets ---
+  - name: SmartKnob
+    repo: scottbez1/smartknob
+    category: displays-ui
+    description: Haptic input knob with software-defined detents and a round display (ESP32-S3)
+    hardware: true
+  - name: Split-flap display
+    repo: scottbez1/splitflap
+    category: displays-ui
+    description: DIY split-flap display with ESP32 controller, laser-cut or 3D-printed
+    hardware: true
+  - name: Watchy
+    repo: sqfmi/Watchy
+    category: displays-ui
+    description: Open-source ESP32 e-paper smartwatch
+    hardware: true
+  - name: EPDiy
+    repo: vroland/epdiy
+    category: displays-ui
+    description: Driver board and library for parallel e-paper displays (Kindle panels etc.)
+    hardware: true
+  - name: NerdMiner v2
+    repo: BitMaker-hub/NerdMiner_v2
+    category: displays-ui
+    description: Toy "lottery" Bitcoin solo miner with a stats display on cheap ESP32 boards
+
+  # --- Gaming & input ---
+  - name: Retro-Go
+    repo: ducalex/retro-go
+    category: gaming
+    description: Retro console emulator launcher (NES, GB, SMS, PCE, ...) for ESP32 handhelds
+  - name: Bluepad32
+    repo: ricardoquesada/bluepad32
+    category: gaming
+    description: Bluetooth gamepad host for ESP32 supporting Xbox, PlayStation, Switch controllers
+
+  # --- Robotics & CNC ---
+  - name: FluidNC
+    repo: bdring/FluidNC
+    category: robotics-cnc
+    description: CNC motion controller firmware (successor to Grbl_ESP32) for mills, lasers and plotters
+  - name: ESP-Drone
+    repo: espressif/esp-drone
+    category: robotics-cnc
+    description: Mini quadcopter built around ESP32-S2/S3, controlled from a phone
+    hardware: true
+
+  # --- Crypto hardware ---
+  - name: Blockstream Jade
+    repo: Blockstream/Jade
+    category: crypto
+    description: Open-source Bitcoin hardware wallet firmware, also buildable on generic ESP32 boards
+
+  # --- Frameworks & libraries ---
+  - name: ESP-IDF
+    repo: espressif/esp-idf
+    category: foundations
+    description: Espressif's official IoT development framework
+  - name: Arduino core for ESP32
+    repo: espressif/arduino-esp32
+    category: foundations
+    description: Arduino core for the ESP32 family
+  - name: esp32-camera
+    repo: espressif/esp32-camera
+    category: foundations
+    description: Camera driver for OV2640/OV3660/OV5640 and friends (ESP32-CAM)
+  - name: TFT_eSPI
+    repo: Bodmer/TFT_eSPI
+    category: foundations
+    description: Fast graphics library for SPI TFT displays
+  - name: LovyanGFX
+    repo: lovyan03/LovyanGFX
+    category: foundations
+    description: High-performance graphics library for SPI/I2C/parallel displays
+  - name: NimBLE-Arduino
+    repo: h2zero/NimBLE-Arduino
+    category: foundations
+    description: Lightweight BLE stack for Arduino, a drop-in replacement for the default one
+  - name: WiFiManager
+    repo: tzapu/WiFiManager
+    category: foundations
+    description: Captive-portal WiFi configuration for ESP boards
+  - name: ESPAsyncWebServer
+    repo: ESP32Async/ESPAsyncWebServer
+    category: foundations
+    description: Asynchronous HTTP and WebSocket server
+  - name: ESP32-A2DP
+    repo: pschatzmann/ESP32-A2DP
+    category: foundations
+    description: Bluetooth A2DP audio sink/source library
+  - name: ESP32-HUB75-MatrixPanel-DMA
+    repo: mrcodetastic/ESP32-HUB75-MatrixPanel-DMA
+    category: foundations
+    description: DMA driver for HUB75 RGB LED matrix panels
+  - name: IRremoteESP8266
+    repo: crankyoldgit/IRremoteESP8266
+    category: foundations
+    description: Send and receive infrared remote protocols (works on ESP32 too)
